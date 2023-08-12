@@ -13,25 +13,25 @@
     <div class="container">
         <div class="search">
          <input type="text" placeholder="Enter City Name" spellcheck="false"> 
-         <button class="button"><img src="/logos/search.png"></button>
+         <button class="button"><img src="./logos/search.png"></button>
         </div>
         <div class="error">
           <p>Invalid Location</p>
         </div>
         <div class="weather">
-          <img src="logos/rain.png" class="weatherIcon">
+          <img src="./logos/rain.png" class="weatherIcon">
           <h1 class="temp">22°C</h1>
           <h2 class="location">Shillong</h2></h1>
           <div class="details">
             <div class="col">
-              <img src="/logos/humidity.png">
+              <img src="./logos/humidity.png">
               <div class="text">
                 <p class="humid">50%</p>
                 <p>Humidity</p>
               </div>
             </div>
             <div class="col">
-              <img src="/logos/wind.png">
+              <img src="./logos/wind.png">
               <div class="text">
                 <p class="wind">15 KM/H</p>
                 <p>Wind</p>
@@ -67,28 +67,28 @@
         document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h";
 
         if(data.weather[0].main == "Clouds"){
-          weathericon.src = "logos/clouds.png";
+          weathericon.src = "./logos/clouds.png";
         }
         else if(data.weather[0].main == "Rain"){
-          weathericon.src = "logos/rain.png";
+          weathericon.src = "./logos/rain.png";
         }
         else if(data.weather[0].main == "Clear"){
-          weathericon.src = "logos/clear.png";
+          weathericon.src = "./logos/clear.png";
         }
         else if(data.weather[0].main == "Drizzling"){
-          weathericon.src = "logos/drizzling.png";
+          weathericon.src = "./logos/drizzling.png";
         }
         else if(data.weather[0].main == "Mist"){
-          weathericon.src = "logos/mist.png";
+          weathericon.src = "./logos/mist.png";
         }
         else if(data.weather[0].main == "Haze"){
-          weathericon.src = "logos/haze.png";
+          weathericon.src = "./logos/haze.png";
         }
         else if(data.weather[0].main == "Snow"){
-          weathericon.src = "logos/snow.png";
+          weathericon.src = "./logos/snow.png";
         }
         else if(data.weather[0].main == "Storm"){
-          weathericon.src = "logos/storm.png";
+          weathericon.src = "./logos/storm.png";
         }
         
         document.querySelector(".weather").style.display = "block";
