@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color : rgb(179, 149, 207);
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #ebfffc;
+    margin: 100px auto;
+    padding: 50px 35px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: font-family: 'Neuton', serif;;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 30px 275x;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.search button img{
+    width: 24px;
+    height: 20px;
+    padding: 10px;
+}
+.weatherIcon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.weather h2{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-top: 40px;
+}
+.details .text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    padding: 0px 20px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0px 35px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 10px;
+    color: red;
+    display: none;
+}
+@media(max-width : 602px){
+    .details .col{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .col{
+        padding: 21px 4px;
+    }
+}
